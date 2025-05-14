@@ -12,16 +12,25 @@ This project applies machine learning techniques to predict the likelihood of a 
 
 ## 📊 Dataset
 
-- Source: [Pima Indians Diabetes Dataset](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database)
+- Source: https://www.kaggle.com/datasets/ziya07/diabetes-clinical-dataset100k-rows
 - Features:
-  - Pregnancies
-  - Glucose
-  - Blood Pressure
-  - Skin Thickness
-  - Insulin
-  - BMI
-  - Diabetes Pedigree Function
-  - Age
+  year                 
+  gender               
+  age                  
+  location              
+  race:AfricanAmerican  
+  race:Asian            
+  race:Caucasian        
+  race:Hispanic        
+  race:Other           
+  hypertension          
+  heart_disease        
+  smoking_history      
+  bmi                  
+  hbA1c_level          
+  blood_glucose_level   
+  diabetes               
+  clinical_notes        
 - Target:
   - Outcome (1 = diabetic, 0 = non-diabetic)
 
@@ -42,51 +51,16 @@ The notebook includes the following steps:
    - Models used:
      - Logistic Regression
      - Random Forest Classifier
+     - LightGBM
+     - CatBoost
+     - Simple DNN Model 
    - Evaluation metrics:
-     - Accuracy
-     - Precision
-     - Recall
      - F1 Score
 
 4. **Model Evaluation**
    - Confusion matrices
    - Metric comparison across models
 
-## 🚀 How to Run
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/diabetes-prediction.git
-   cd diabetes-prediction
-   ```
-
-2. Install required libraries:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Launch Jupyter Notebook:
-   ```bash
-   jupyter notebook diabetes-prediction.ipynb
-   ```
-
-## 🛠️ Dependencies
-
-- Python 3.x
-- pandas
-- numpy
-- scikit-learn
-- matplotlib
-- seaborn
-
-### `requirements.txt`:
-```txt
-pandas
-numpy
-scikit-learn
-matplotlib
-seaborn
-```
 
 ## 📈 Model Results
 
